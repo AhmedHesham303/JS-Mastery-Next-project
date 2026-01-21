@@ -18,6 +18,11 @@ export default async function Home({
         </p>
         <SearchForm query={query} />
       </section>
+      <section className="section-container">
+        <p className="text-30-semibold">
+          {query ? "results" : "strt searching"}
+        </p>
+      </section>
     </>
   );
 }
